@@ -13,3 +13,7 @@ rm -rf /var/cache/apk/*
 
 # backwards compatibility
 ln -fs /tmp/docker.sock /var/run/docker.sock
+
+# setup custom logger script
+mv /src/logger.sh /bin/logger
+chmod +x /bin/logger
