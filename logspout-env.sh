@@ -1,6 +1,6 @@
 #!/bin/sh
-if [ -x $LOGGLY_TOKEN ]; then
+if [ -x $SYSLOG_URL ]; then
   /bin/logspout $*
 else
-  /bin/logspout syslog://logs-01.loggly.com:514?structured_data=$LOGGLY_TOKEN@41058
+  /bin/logspout $SYSLOG_URL
 fi
