@@ -15,5 +15,5 @@ rm -rf /var/cache/apk/*
 ln -fs /tmp/docker.sock /var/run/docker.sock
 
 # setup custom logger script
-mv /src/logger.sh /bin/logger
-chmod +x /bin/logger
+mv /src/logspout-env.sh /bin/logspout-env
+chmod +x /bin/logspout-env
