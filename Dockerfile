@@ -1,5 +1,5 @@
 FROM gliderlabs/alpine:3.1
-ENTRYPOINT ["/bin/logspout"]
+ENTRYPOINT ["/bin/logspout-env"]
 VOLUME /mnt/routes
 EXPOSE 8000
 

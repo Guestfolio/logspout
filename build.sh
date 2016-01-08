@@ -13,3 +13,7 @@ rm -rf /var/cache/apk/*
 
 # backwards compatibility
 ln -fs /tmp/docker.sock /var/run/docker.sock
+
+# setup custom logger script
+mv /src/logspout-env.sh /bin/logspout-env
+chmod +x /bin/logspout-env
